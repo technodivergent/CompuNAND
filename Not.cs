@@ -8,8 +8,6 @@ namespace CompuNAND
 {
     class Not : LogicGate
     {
-        private bool c;
-
         public Not(int a, int b)
         {
             bool p = Convert.ToBoolean(a);
@@ -26,11 +24,6 @@ namespace CompuNAND
                     z = false;
 
             return z;
-        }
-
-        public void Print()
-        {
-            Console.WriteLine(c ? 1 : 0);
         }
     }
 }

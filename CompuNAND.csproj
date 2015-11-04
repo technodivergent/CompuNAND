@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="And.cs" />
     <Compile Include="LogicGate.cs" />
     <Compile Include="Nand.cs" />
+    <Compile Include="Not.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

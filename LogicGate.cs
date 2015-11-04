@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace CompuNAND
 {
-    interface LogicGate
+    class LogicGate
     {
-        void Print();
+        protected bool c;
+
+        public void Print()
+        {
+            Console.WriteLine(c ? 1 : 0);
+        }
     }
 }

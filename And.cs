@@ -8,8 +8,6 @@ namespace CompuNAND
 {
     class And : LogicGate
     {
-        private bool c;
-
         public And(int a, int b)
         {
             bool p = Convert.ToBoolean(a);
@@ -20,11 +18,6 @@ namespace CompuNAND
         private bool AND(bool p, bool q)
         {
             throw new NotImplementedException();
-        }
-
-        public void Print()
-        {
-            Console.WriteLine(c ? 1 : 0);
         }
     }
 }
