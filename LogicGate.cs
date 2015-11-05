@@ -10,7 +10,12 @@ namespace CompuNAND
     {
         protected bool c;
 
-        public void Print()
+        public bool ToBool()
+        {
+            return c;
+        }
+
+        public void WriteLine()
         {
             Console.WriteLine(c ? 1 : 0);
         }

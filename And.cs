@@ -8,6 +8,20 @@ namespace CompuNAND
 {
     class And : LogicGate
     {
+        public And(LogicGate LG1, LogicGate LG2)
+        {
+            bool p = LG1.ToBool();
+            bool q = LG2.ToBool();
+            this.c = AND(p, q);
+        }
+
+        public And(bool a, bool b)
+        {
+            bool p = a;
+            bool q = b;
+            this.c = AND(p, q);
+        }
+
         public And(int a, int b)
         {
             bool p = Convert.ToBoolean(a);
@@ -17,7 +31,10 @@ namespace CompuNAND
 
         private bool AND(bool p, bool q)
         {
-            throw new NotImplementedException();
+            Nand NAND = new Nand(p, q);
+            Not NOT = new Not(NAND);
+            bool z = NOT.ToBool();
+            return z;
         }
     }
 }

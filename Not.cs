@@ -8,21 +8,28 @@ namespace CompuNAND
 {
     class Not : LogicGate
     {
-        public Not(int a, int b)
+        public Not(LogicGate LG)
         {
-            bool p = Convert.ToBoolean(a);
-            bool q = Convert.ToBoolean(b);
-            this.c = NOT(p, q);
+            bool p = LG.ToBool();
+            this.c = NOT(p);
         }
 
-        private bool NOT(bool p, bool q)
+        public Not(bool a)
         {
-            bool z = true;
+            bool p = a;
+            this.c = NOT(p);
+        }
 
-            if (p)
-                if (q)
-                    z = false;
+        public Not(int a)
+        {
+            bool p = Convert.ToBoolean(a);
+            this.c = NOT(p);
+        }
 
+        private bool NOT(bool p)
+        {
+            Nand NAND = new Nand(p, p);
+            bool z = NAND.ToBool();
             return z;
         }
     }
