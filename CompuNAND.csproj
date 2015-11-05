@@ -46,6 +46,7 @@
     <Compile Include="And.cs" />
     <Compile Include="LogicGate.cs" />
     <Compile Include="Nand.cs" />
+    <Compile Include="Nor.cs" />
     <Compile Include="Not.cs" />
     <Compile Include="Or.cs" />
     <Compile Include="Program.cs" />

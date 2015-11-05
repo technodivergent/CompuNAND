@@ -66,7 +66,17 @@ namespace CompuNAND
             Xor3.WriteLine();
             Xor4.WriteLine();
 
+            Console.WriteLine("\nNOR");
 
+            Nor Nor1 = new Nor(0, 0);
+            Nor Nor2 = new Nor(0, 1);
+            Nor Nor3 = new Nor(1, 0);
+            Nor Nor4 = new Nor(1, 1);
+
+            Nor1.WriteLine();
+            Nor2.WriteLine();
+            Nor3.WriteLine();
+            Nor4.WriteLine();
 
             Console.ReadKey();
         }
