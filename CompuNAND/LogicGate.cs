@@ -15,9 +15,19 @@ namespace CompuNAND
             return c;
         }
 
+        public int Calc()
+        {
+            return c ? 1 : 0;
+        }
+
+        public void Write()
+        {
+            Console.Write(Calc());
+        }
+
         public void WriteLine()
         {
-            Console.WriteLine(c ? 1 : 0);
+            Console.WriteLine(Calc());
         }
     }
 }
