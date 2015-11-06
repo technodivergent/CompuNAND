@@ -15,10 +15,8 @@ namespace CompuNAND
             this.c = NOR(p, q);
         }
 
-        public Nor(bool a, bool b)
+        public Nor(bool p, bool q)
         {
-            bool p = a;
-            bool q = b;
             this.c = NOR(p, q);
         }
 

@@ -15,10 +15,8 @@ namespace CompuNAND
             this.c = XOR(p, q);
         }
 
-        public Xor(bool a, bool b)
+        public Xor(bool p, bool q)
         {
-            bool p = a;
-            bool q = b;
             this.c = XOR(p, q);
         }
 

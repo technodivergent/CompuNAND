@@ -15,10 +15,8 @@ namespace CompuNAND
             this.c = AND(p, q);
         }
 
-        public And(bool a, bool b)
+        public And(bool p, bool q)
         {
-            bool p = a;
-            bool q = b;
             this.c = AND(p, q);
         }
 

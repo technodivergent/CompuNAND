@@ -15,10 +15,8 @@ namespace CompuNAND
             this.c = OR(p, q);
         }
 
-        public Or(bool a, bool b)
+        public Or(bool p, bool q)
         {
-            bool p = a;
-            bool q = b;
             this.c = OR(p, q);
         }
 

@@ -15,10 +15,8 @@ namespace CompuNAND
             this.c = MUX(p, q, sel);
         }
 
-        public Mux(bool a, bool b, bool sel)
+        public Mux(bool p, bool q, bool sel)
         {
-            bool p = a;
-            bool q = b;
             this.c = MUX(p, q, sel);
         }
 

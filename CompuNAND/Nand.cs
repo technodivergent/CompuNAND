@@ -15,10 +15,8 @@ namespace CompuNAND
             this.c = NAND(p, q);
         }
 
-        public Nand(bool a, bool b)
+        public Nand(bool p, bool q)
         {
-            bool p = a;
-            bool q = b;
             this.c = NAND(p, q);
         }
 

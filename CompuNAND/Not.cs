@@ -14,9 +14,8 @@ namespace CompuNAND
             this.c = NOT(p);
         }
 
-        public Not(bool a)
+        public Not(bool p)
         {
-            bool p = a;
             this.c = NOT(p);
         }
 
