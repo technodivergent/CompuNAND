@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CompuNAND
 {
-    class LogicGate
+    public class LogicGate
     {
         protected bool c;
 

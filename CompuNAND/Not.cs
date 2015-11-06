@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CompuNAND
 {
-    class Not : LogicGate
+    public class Not : LogicGate
     {
         public Not(LogicGate LG)
         {

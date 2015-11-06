@@ -6,36 +6,37 @@ using System.Threading.Tasks;
 
 namespace CompuNAND
 {
-    class Xor : LogicGate
+    public class Nand : LogicGate
     {
-        public Xor(LogicGate LG1, LogicGate LG2)
+        public Nand(LogicGate LG1, LogicGate LG2)
         {
             bool p = LG1.ToBool();
             bool q = LG2.ToBool();
-            this.c = XOR(p, q);
+            this.c = NAND(p, q);
         }
 
-        public Xor(bool a, bool b)
+        public Nand(bool a, bool b)
         {
             bool p = a;
             bool q = b;
-            this.c = XOR(p, q);
+            this.c = NAND(p, q);
         }
 
-        public Xor(int a, int b)
+        public Nand(int a, int b)
         {
             bool p = Convert.ToBoolean(a);
             bool q = Convert.ToBoolean(b);
-            this.c = XOR(p, q);
+            this.c = NAND(p, q);
         }
 
-        private bool XOR(bool p, bool q)
+        private bool NAND(bool p, bool q)
         {
-            Or OR = new Or(p, q);
-            Nand NAND = new Nand(p, q);
-            And AND = new And(OR, NAND);
+            bool z = true;
 
-            bool z = AND.ToBool();
+            if (p)
+                if (q)
+                    z = false;
+
             return z;
         }
     }
