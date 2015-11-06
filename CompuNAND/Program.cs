@@ -78,6 +78,28 @@ namespace CompuNAND
             Nor3.WriteLine();
             Nor4.WriteLine();
 
+            Console.WriteLine("\nMUX");
+
+            Mux Mux1 = new Mux(0, 0, 0);
+            Mux Mux2 = new Mux(0, 1, 0);
+            Mux Mux3 = new Mux(1, 0, 0);
+            Mux Mux4 = new Mux(1, 1, 0);
+
+            Mux Mux5 = new Mux(0, 0, 1);
+            Mux Mux6 = new Mux(0, 1, 1);
+            Mux Mux7 = new Mux(1, 0, 1);
+            Mux Mux8 = new Mux(1, 1, 1);
+
+            Mux1.WriteLine();
+            Mux2.WriteLine();
+            Mux3.WriteLine();
+            Mux4.WriteLine();
+            Console.WriteLine("---------");
+            Mux5.WriteLine();
+            Mux6.WriteLine();
+            Mux7.WriteLine();
+            Mux8.WriteLine();
+
             Console.ReadKey();
         }
     }

@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AndTests.cs" />
+    <Compile Include="MuxTests.cs" />
     <Compile Include="NandTests.cs" />
     <Compile Include="NorTests.cs" />
     <Compile Include="NotTests.cs" />

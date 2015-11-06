@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="And.cs" />
     <Compile Include="LogicGate.cs" />
+    <Compile Include="Mux.cs" />
     <Compile Include="Nand.cs" />
     <Compile Include="Nor.cs" />
     <Compile Include="Not.cs" />
